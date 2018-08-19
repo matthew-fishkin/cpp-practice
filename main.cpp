@@ -7,5 +7,7 @@ int main() {
     first.print();
     second.print();
 
+    std::cout << "Distance between two points: " << first.distanceTo(second) << '\n';
+
     return 0;
 }

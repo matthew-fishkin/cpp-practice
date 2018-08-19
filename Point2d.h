@@ -16,6 +16,7 @@ public:
             m_y(y) {}
 
     void print() const;
+    double distanceTo(const Point2d &other) const;
 };
 
 
