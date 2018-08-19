@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Point2d.h"
+#include "Monster.h"
 #include <cmath>
 
 double distanceFrom(const Point2d &p1, const Point2d &p2) {
@@ -7,12 +8,8 @@ double distanceFrom(const Point2d &p1, const Point2d &p2) {
 }
 
 int main() {
-    Point2d first;
-    Point2d second(3.0, 4.0);
-    first.print();
-    second.print();
-
-    std::cout << "Distance between two points: " << distanceFrom(first, second) << '\n';
+    Monster skele(Monster::SKELETON, "Bones", "*rattle*", 4);
+    skele.print();
 
     return 0;
 }
